@@ -1,0 +1,244 @@
+#resume {
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1%;
+  height: 650px;
+  width: 600px;
+  position: absolute;
+  left: 11%;
+  top: 155vw;
+  text-align: center;
+}
+
+.education {
+  position: absolute;
+  top: 2vw;
+}
+
+.hs {
+  top: 23%;
+  position: absolute;
+}
+
+.edu-year {
+  padding: 1%;
+  position: absolute;
+  top: 16%;
+}
+
+.edu-description {
+  position: absolute;
+  top: 29%;
+}
+
+.bermuda {
+  position: absolute;
+  top: 45%;
+}
+
+.year {
+  position: absolute;
+  top: 39%;
+}
+
+.course {
+  position: absolute;
+  top: 51%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.current {
+  position: absolute;
+  bottom: 26%;
+}
+
+.lc {
+  position: absolute;
+  bottom: 20%;
+}
+
+.dev {
+  position: absolute;
+  bottom: 11%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1%;
+  height: 650px;
+  width: 600px;
+  position: absolute;
+  right: 12%;
+  top: 155vw;
+  text-align: center;
+}
+
+.work-heading {
+  position: absolute;
+  top: 5%;
+}
+
+.year0 {
+  position: absolute;
+  top: 14%;
+}
+
+.promo {
+  position: absolute;
+  top: 18%;
+}
+
+.work {
+  position: absolute;
+  top: 23%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.year1 {
+  position: absolute;
+  bottom: 56%;
+}
+
+.porto {
+  position: absolute;
+  bottom: 48%;
+}
+
+.sales {
+  position: absolute;
+  bottom: 31%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.year2 {
+  position: absolute;
+  bottom: 22%;
+}
+
+.kita {
+  position: absolute;
+  bottom: 18%;
+}
+
+.volunteer {
+  position: absolute;
+  top: 29vw;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.soft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 16%;
+  top: 193vw;
+  text-align: center;
+}
+
+.skills {
+  padding-bottom: 2%;
+}
+
+.soft h3 {
+  padding-bottom: 4%;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: 17%;
+  top: 193vw;
+  text-align: center;
+}
+
+.tech-skills {
+  position: absolute;
+  top: 1vw;
+  padding-bottom: 2%;
+}
+
+.html-icon {
+  position: absolute;
+  top: 15%;
+}
+
+.html {
+  position: absolute;
+  top: 24%;
+}
+
+.css-icon {
+  position: absolute;
+  top: 33%;
+}
+
+.css {
+  position: absolute;
+  top: 42%;
+}
+
+.java-icon {
+  position: absolute;
+  top: 52%;
+}
+
+.java {
+  position: absolute;
+  top: 61%;
+}
+
+.python-icon {
+  position: absolute;
+  top: 77%;
+}
+
+.python {
+  position: absolute;
+  top: 86%;
+}
