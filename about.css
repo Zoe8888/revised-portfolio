@@ -1,5 +1,5 @@
 #about-me {
-  height: 100vh;
+  height: auto;
 }
 
 .general {
@@ -221,7 +221,7 @@ h2.city {
   padding-left: 25%;
   padding-right: 59%;
   position: absolute;
-  top: 50vw;
+  top: 48vw;
   left: 1vw;
 }
 
@@ -258,7 +258,7 @@ h2.city {
   padding-top: 72%;
   padding-left: 26%;
   position: absolute;
-  top: 44vw;
+  top: 42vw;
   padding-right: 36%;
   left: 22vw;
 }
@@ -296,11 +296,11 @@ h2.city {
 
 .testimonial-r {
   padding-top: 72%;
-  padding-left: 69%;
+  padding-left: 70%;
   padding-right: 20%;
   position: absolute;
-  top: 44vw;
-  right: -5vw;
+  top: 42vw;
+  right: -6vw;
 }
 
 .adam {
@@ -309,8 +309,8 @@ h2.city {
   align-items: center;
   position: absolute;
   top: 110vw;
-  right: 16%;
-  font-size: 25px;
+  top: 135vw;
+  right: 17%;
 }
 
 .position-a {
@@ -318,7 +318,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 112vw;
+  top: 137vw;
   right: 14%;
 }
 
@@ -330,7 +330,7 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 101vw;
+  top: 126vw;
   right: 18%;
 }
 
@@ -339,7 +339,7 @@ h2.city {
   padding-left: 69%;
   padding-right: 20%;
   position: absolute;
-  top: 44vw;
+  top: 67vw;
   right: -5vw;
 }
 
@@ -348,8 +348,8 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 110vw;
-  right: 16%;
+  top: 135vw;
+  right: 59%;
   font-size: 25px;
 }
 
@@ -358,8 +358,8 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 112vw;
-  right: 14%;
+  top: 137vw;
+  right: 58%;
 }
 
 .img-y {
@@ -370,17 +370,17 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 101vw;
-  right: 18%;
+  top: 126vw;
+  right: 62%;
 }
 
 .testimonial-y {
   padding-top: 72%;
-  padding-left: 69%;
-  padding-right: 20%;
+  padding-left: 23%;
+  padding-right: 23%;
   position: absolute;
-  top: 44vw;
-  right: -5vw;
+  top: 67vw;
+  right: 35vw;
 }
 
 .brent {
@@ -388,8 +388,8 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 110vw;
-  right: 16%;
+  top: 135vw;
+  right: 38%;
   font-size: 25px;
 }
 
@@ -398,8 +398,8 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 112vw;
-  right: 14%;
+  top: 137vw;
+  right: 35%;
 }
 
 .img-b {
@@ -410,17 +410,17 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 101vw;
-  right: 18%;
+  top: 126vw;
+  right: 39%;
 }
 
 .testimonial-b {
   padding-top: 72%;
-  padding-left: 69%;
-  padding-right: 20%;
+  padding-left: 48%;
+  padding-right: 41%;
   position: absolute;
-  top: 44vw;
-  right: -5vw;
+  top: 67vw;
+  right: -6%;
 }
 
 .social-icons {

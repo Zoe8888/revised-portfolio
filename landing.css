@@ -27,7 +27,7 @@ body {
 
 #landing {
   background-color: #a1d286;
-  height: 100vh;
+  height: auto;
 }
 
 .landing-img {
