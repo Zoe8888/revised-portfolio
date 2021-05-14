@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/e6eae71e18.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="landing.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="about.css" />
@@ -29,23 +30,33 @@
       <button class="navbar-button" onclick="toggleNavbar()">ZE</button>
     </nav>
     <!--Landing Section-->
-    <div class="landing" id="landing">
+    <div id="landing">
       <h1 class="landing-header">Zoe Erispe</h1>
-      <h2 class="landing-description">- aspiring front end developer -</h2>
+      <h2 class="landing-description">- aspiring frontend developer -</h2>
       <img class="landing-img" src="/images/landing-img-removebg.png" alt="" />
-      <div class="social-icons">
-        <i class="fab fa-linkedin-in"></i> <i class="fab fa-github"></i> <i class="fas fa-at"></i> <i class="fab fa-codepen"></i>
-      </div>
+      <!-- <div class="social-icons">
+        <a target="_blank" class="linked" href="https://www.linkedin.com/in/zoe-erispe-38555b212/">
+          <i class="fab fa-linkedin-in fa-2x sicon"></i>
+        </a>
+          <a target="_blank" class="git" href="https://github.com/Zoe8888">
+            <i class="fab fa-github fa-2x sicon"></i>
+          </a>
+          <a target="_blank" class="codepen" href="https://codepen.io/zoe8888">
+            <i class="fab fa-codepen fa-2x sicon"></i>
+          </a>
+    </div> -->
     </section>
     <section id="about-me">
-      <img class="pic" src="/images/zoe1.png" alt="picture of Zoe" />
-      <div class="general">
-        <h2 class="name">Full Name: Zoe Erispe</h2>
-        <h2 class="age">Age: 22</h2>
-        <h2 class="gender">Gender: Female</h2>
-        <h2 class="star">Starsign: Pisces</h2>
-        <h2 class="nationality">Nationality: South African</h2>
-        <h2 class="city">Current City: Cape Town</h2>
+      <div class="general-container">
+        <img class="pic" src="/images/zoe1.png" alt="picture of Zoe" />
+        <div class="general">
+          <h2 class="name">Full Name: Zoe Erispe</h2>
+          <h2 class="age">Age: 22</h2>
+          <h2 class="gender">Gender: Female</h2>
+          <h2 class="star">Starsign: Pisces</h2>
+          <h2 class="nationality">Nationality: South African</h2>
+          <h2 class="city">Current City: Cape Town</h2>
+        </div>
       </div>
       <div class="about-header">
         <div class="about-box">
@@ -79,7 +90,8 @@
         </div>
       </div>
       <div id="fun-facts">
-        <h2 class="fun-fact">Fun Facts</h2>
+        <div class="fun">
+          <h2 class="fun-fact">Fun Facts</h2>
         <div id="book-icon"><i class="fas fa-book fa-3x"></i></div>
         <h3 class="books">Over 50 books read</h3>
         <div id="globe-icon"><i class="fas fa-globe-africa fa-3x"></i></div>
@@ -88,108 +100,117 @@
         <h3 class="tea">Roughly 1000l of tea drank</h3>
         <div id="music-icon"><i class="fas fa-music fa-3x"></i></div>
         <h3 class="music">Attended 6 music festivals</h3>
+        </div>
+        
       </div>
       <!--Testimonial Section-->
       <div id="testimonial-section">
-        <h2 class="testiomials">Testimonials</h2>
-        <img class="img-j" src="./images/pic-of-me.jpg" alt="Jason's picture" />
-        <div class="testimonial-1"><h2 class="jason">Jason Wandrag</h2>
-          <h3 class="position-j">Frontend Developer & Lecturer</h3>
-          <p class="testimonial-j">
-            Zoe has a bright and nurturing personality, coupled with an amazing work ethic. I see her quickly propelling herself forwards into her career
-          </p></div>
-        <img class="img-g" src="./images/Godwin.png" alt="Godwin's picture" />
-        <div class="testimonial-2"><h2 class="godwin">Godwin Dzvapatsva</h2>
-          <h3 class="position-g">Head of Curriculum & Learning</h3>
-          <p class="testimonial-g">
-            Zoe is a diligent student who pays particular attention to detail. Zoe is confident and open to suggestions. I highly recommend her for any opportunities within your organisation
-          </p></div>
-        <img class="img-r" src="./images/ronbon.jpg" alt="Ronald's picture" />
-        <div class="testimonial-3"><h2 class="ron">Ronald Terblanche</h2>
-          <h3 class="position-r">Aspiring Backend Developer</h3>
-          <p class="testimonial-r">
-            She is full of life and energy and instantly brightens up a room. She is creative, has an eye for design and the skill to make that design a reality, as can be seen by this portfolio. I would definitely recommend her as a front end developer as she has the potential to be superb.
-          </p>
+        <div class="testimonial">
+          <h2 class="testiomials">Testimonials</h2>
+          <div class="testimonial-1">
+            <img class="img-j" src="./images/jason-wandrag1.jpg" alt="Jason's picture" />
+            <h2 class="jason">Jason Wandrag</h2>
+            <h3 class="position-j">Frontend Developer & Lecturer</h3>
+            <p class="testimonial-j">
+              Zoe has a bright and nurturing personality, coupled with an amazing work ethic. I see her quickly propelling herself forwards into her career
+            </p>
+          </div>
+          <div class="testimonial-2">
+            <img class="img-g" src="./images/Godwin.png" alt="Godwin's picture" />
+            <h2 class="godwin">Godwin Dzvapatsva</h2>
+            <h3 class="position-g">Head of Curriculum & Learning</h3>
+            <p class="testimonial-g">
+              Zoe is a diligent student who pays particular attention to detail. Zoe is confident and open to suggestions. I highly recommend her for any opportunities within your organisation
+            </p>
+          </div>
+          <div class="testimonial-3">
+            <img class="img-r" src="./images/ronbon.jpg" alt="Ronald's picture" />
+            <h2 class="ron">Ronald Terblanche</h2>
+            <h3 class="position-r">Aspiring Backend Developer</h3>
+            <p class="testimonial-r">
+              She is full of life and energy and instantly brightens up a room. She is creative, has an eye for design and the skill to make that design a reality, as can be seen by this portfolio. I would definitely recommend her as a front end developer as she has the potential to be superb.
+            </p>
+          </div>
+          <div class="testimonial-4">
+            <img class="img-a" src="./images/Adam Africa (1).JPG" alt="Adam's picture" />
+            <h2 class="adam">Adam Africa</h2>
+            <h3 class="position-a">Aspiring Fullstack Developer</h3>
+            <p class="testimonial-a">
+              Zoe is one of the most forward thinking people I know. She has an extremely magnetic personality and the ability to work with anyone. Her perserverance and work ethic continues to gorw stronger. She will make an amazing frontend developer.
+            </p>
+          </div>
+          <div class="testimonial-5">
+            <img class="img-y" src="./images/Yamkela Mathontsi C1 3May21 (3).JPG" alt="Yamkela picture" />
+            <h2 class="yam">Yamkela Mathonsti</h2>
+            <h3 class="position-y">Aspiring Fullstack Developer</h3>
+            <p class="testimonial-y">
+              Zoe is smart, a hard worker and an excellent programmer. She always does her absolute best in everything she sets her minds to. An absolute treasure of a young developer. With so muhc potential, I have no doubt she will exceed expectations.
+            </p>
+          </div>
+          <div class="testimonial-6">
+            <img class="img-b" src="./images/Brent Lee Johnson (3).JPG" alt="Brent's picture" />
+            <h2 class="brent">Brent Johnson</h2>
+            <h3 class="position-b">Aspiring Frontend Developer</h3>
+            <p class="testimonial-b">
+              Zoe is one of the most positive people I've ever met. She is kind in her actions and during the working hours Zoe aims to thrive. As her classmate, I've witness her talent for learning and applying concepts.
+            </p>
+          </div>
         </div>
-        <img class="img-a" src="./images/Adam Africa (1).JPG" alt="Adam's picture" />
-        <div class="testimonial-4"><h2 class="adam">Adam Africa</h2>
-          <h3 class="position-a">Aspiring Fullstack Developer</h3>
-          <p class="testimonial-a">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            unde eveniet exercitationem soluta cupiditate assumenda suscipit,
-            odio et possimus beatae totam dolore harum rem, laborum repellendus
-            quia sunt veritatis nobis?
-          </p>
-        </div>
-        <img class="img-y" src="./images/Yamkela Mathontsi C1 3May21 (3).JPG" alt="Yamkela picture" />
-        <div class="testimonial-5"><h2 class="yam">Yamkela Mathonsti</h2>
-          <h3 class="position-y">Aspiring Fullstack Developer</h3>
-          <p class="testimonial-y">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            unde eveniet exercitationem soluta cupiditate assumenda suscipit,
-            odio et possimus beatae totam dolore harum rem, laborum repellendus
-            quia sunt veritatis nobis?
-          </p>
-        </div>
-        <img class="img-b" src="./images/Brent Lee Johnson (3).JPG" alt="Brent's picture" />
-        <div class="testimonial-6"><h2 class="brent">Brent Johnson</h2>
-          <h3 class="position-b">Aspiring Frontend Developer</h3>
-          <p class="testimonial-b">
-            Zoe is one of the most positive people I've ever met. She is kind in her actions and during the working hours Zoe aims to thrive. As her classmate, I've witness her talent for learning and applying concepts.
-          </p>
-        </div>
-      </div>
-      <div class="social-icons">
-        <i class="fab fa-linkedin-in"></i> <i class="fab fa-github"></i> <i class="fas fa-at"></i>
+        
       </div>
     </section>
   </section>
   <!--Resume-->
   <section id="resume">
-    <div class="left">
-      <h2 class="education">Education</h2>
-      <h3 class="edu-year">2013 - 2017</h3>
-      <h3 class="hs">Groote Schuur High School</h3>
-      <p class="edu-description">
-      I matriculated high school with 4 distinctions..
-      </p>
-      <h3 class="year">2019 - 2020</h3>
-      <h3 class="bermuda">Bermuda Sprachschule</h3>
-      <p class="course">In 2019 I attained my A2 certificate in the German laguage through TELC Deutsch. The following year I achieved my B2 certificate in German.</p>
-      <h3 class="current">2021 - present</h3>
-      <h3 class="lc">Life Choices Coding Academy</h3>
-      <p class="dev">I am currently studying both frontend and backend development at Life Choices.</p>
+    <div class="resume-top">
+      <div class="left">
+        <h2  class="education">Education</h2>
+        <h3 class="edu-year">2013 - 2017</h3>
+        <h3 class="hs">Groote Schuur High School</h3>
+        <p class="edu-description">
+        I matriculated high school with 4 distinctions..
+        </p>
+        <h3 class="year">2019 - 2020</h3>
+        <h3 class="bermuda">Bermuda Sprachschule</h3>
+        <p class="course">In 2019 I attained my A2 certificate in the German laguage through TELC Deutsch. The following year I achieved my B2 certificate in German.</p>
+        <h3 class="current">2021 - present</h3>
+        <h3 class="lc">Life Choices Coding Academy</h3>
+        <p class="dev">I am currently studying both frontend and backend development at Life Choices.</p>
+      </div>
+      <div class="right"> 
+        <h2 class="work-heading">Work History</h2>
+        <h3 class="year0">2017 - 2019</h3>
+        <h3 class="promo">Perfect Solutions - <span>Promotional Worker</span></h3>
+        <p class="work">I have promoted various products in malls, restuarants and bars. Some of the brands I've worked with include Coca-Cola, Pick n Pay and Amstel Larger.</p>
+        <h3 class="year1">2018 - 2019</h3>
+        <h3 class="porto">Portobello Road Vinatge - <span>Sales Assistant & Content Creator</span></h3>
+        <p class="sales">My position involved assisting customers, changing the mannequins and ensuring the store was always presentable. I would alsostyle and photography daily outfits for the companies Instagram & Facebook pictures.
+        </p>
+        <h3 class="year2">2019 - 2020</h3>
+        <h3 class="kita">Waldorf Kindehaus Bochum-Zentrum - <span>Volunteer</span></h3>
+        <p class="volunteer">I worked in Germany for a year and 5 months as a volunteer in a kindergarden. My role was to assist the teachers and engage with the children.</p></div>
     </div>
-    <div class="right"><h2 class="work-heading">Work History</h2>
-      <h3 class="year0">2017 - 2019</h3>
-      <h3 class="promo">Perfect Solutions - <span>Promotional Worker</span></h3>
-      <p class="work">I have promoted various products in malls, restuarants and bars. Some of the brands I've worked with include Coca-Cola, Pick n Pay and Amstel Larger.</p>
-      <h3 class="year1">2018 - 2019</h3>
-      <h3 class="porto">Portobello Road Vinatge - <span>Sales Assistant & Content Creator</span></h3>
-      <p class="sales">My position involved assisting customers, changing the mannequins and ensuring the store was always presentable. I would alsostyle and photography daily outfits for the companies Instagram & Facebook pictures.
-      </p>
-      <h3 class="year2">2019 - 2020</h3>
-      <h3 class="kita">Waldorf Kindehaus Bochum-Zentrum - <span>Volunteer</span></h3>
-      <p class="volunteer">I worked in Germany for a year and 5 months as a volunteer in a kindergarden. My role was to assist the teachers and engage with the children.</p></div>
-    <div class="soft">
-      <h2 class="skills">Soft Skills</h2>
-      <h3>Good communication skills</h3>
-      <h3>Good organizational skills</h3>
-      <h3>Open to constructive criticism</h3>
-      <h3>Problem-solving</h3>
-      <h3>Team player</h3>
-      <h3>Punctual</h3>
-    </div>
-    <div class="tech">
-      <h2 class="tech-skills">Technical Skills</h2>
-      <div class="html-icon"><i class="fab fa-html5 fa-2x"></i></div>
-      <h3 class="html">I am fairly proficient in HTML.</h3>
-      <div class="css-icon"><i class="fab fa-css3-alt fa-2x"></i></div>
-      <h3 class="css">I am fairly proficient in CSS.</h3>
-      <div class="java-icon"><i class="fab fa-js-square fa-2x"></i></div>
-      <h3 class="java">I have a beginners understaning of JavaScript.</h3>
-      <div class="python-icon"><i class="fab fa-python fa-2x"></i></div>
-      <h3 class="python">I have a basic understanding of Python.</h3>
+    <div class="resume-bottom">
+      <div class="soft">
+        <h2 class="skills">Soft Skills</h2>
+        <h3>Good communication skills</h3>
+        <h3>Good organizational skills</h3>
+        <h3>Open to constructive criticism</h3>
+        <h3>Problem-solving</h3>
+        <h3>Team player</h3>
+        <h3>Punctual</h3>
+      </div>
+      <div class="tech">
+        <h2 class="tech-skills">Technical Skills</h2>
+        <div class="html-icon"><i class="fab fa-html5 fa-2x"></i></div>
+        <h3 class="html">I am fairly proficient in HTML.</h3>
+        <div class="css-icon"><i class="fab fa-css3-alt fa-2x"></i></div>
+        <h3 class="css">I am fairly proficient in CSS.</h3>
+        <div class="java-icon"><i class="fab fa-js-square fa-2x"></i></div>
+        <h3 class="java">I have a beginners understaning of JavaScript.</h3>
+        <div class="python-icon"><i class="fab fa-python fa-2x"></i></div>
+        <h3 class="python">I have a basic understanding of Python.</h3>
+      </div>
     </div>
   </section>
   <!--Projects Section-->
@@ -440,61 +461,89 @@
   </section>
     <!--Contact ME-->
     <section id="contact-sec">
-      <h2 class="contact-header">Contact Me</h2>
-      <div class="phone"><i class="fas fa-phone-alt fa-3x"></i></div>
-      <h2 class="num">Call me on: <span>+27 849 219 477</span></h2>
-      <div class="at"><i class="fas fa-at fa-3x"></i></div>
-      <h2 class="mail">Email: <span>zoeerispe7@gmail.com</span></h2>
-      <div class="contact-form">
-        <form action="https://formspree.io/f/mjvjklkr" method="POST">
-          <div class="contact-info">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              class="contact-input"
-              id="name"
-              required
-            />
-          </div>
-          <div class="contact-info">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="replyto"
-              id="email"
-              class="contact-input"
-              required
-              placeholder="name@domain.com"
-            />
-          </div>
-          <div class="contact-info">
-            <label for="phone">Phone</label>
-            <input
-              type="tel"
-              class="contact-input"
-              id="number"
-              name="phone"
-              required
-              placeholder="081 234 5679"
-            />
-          </div>
-          <div class="contact-info">
-            <label for="message">Message</label>
-            <input
-              type="text"
-              class="contact-input"
-              name="message"
-              id="message"
-              placeholder="Enter message"
-            />
-          </div>
-          <div>
-            <button class="contact-input" type="submit">Send</button>
-          </div>
-      </form>
+      <div class="contact-container">
+        <h2 class="contact-header">Contact Me</h2>
+        <div class="contact-top">
+        <div class="phone"><i class="fas fa-phone-alt fa-3x"></i></div>
+        <h2 class="num">Call me on: <span>+27849219477</span></h2>
+        <div class="at"><i class="fas fa-at fa-3x"></i></div>
+        <h2 class="mail">Email: <span>zoeerispe7@gmail.com</span></h2>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mjvjklkr" method="POST">
+            <div class="contact-info">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="contact-input"
+                id="name"
+                required
+              />
+            </div>
+            <div class="contact-info">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="replyto"
+                id="email"
+                class="contact-input"
+                required
+                placeholder="name@domain.com"
+              />
+            </div>
+            <div class="contact-info">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                class="contact-input"
+                id="number"
+                name="phone"
+                required
+                placeholder="081 234 5679"
+              />
+            </div>
+            <div class="contact-info">
+              <label for="message">Message</label>
+              <input
+                type="text"
+                class="contact-input"
+                name="message"
+                id="message"
+                placeholder="Enter message"
+              />
+            </div>
+            <div>
+              <button class="contact-input" type="submit">Send</button>
+            </div>
+        </form>
+        </div>
       </div>
+      <!--Footer-->
     </section>
+    <footer class="footer">
+      <div class="footer-name">
+        <div class="ze">Zoe Erispe</div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-icons">
+          <div class="link">
+            <a target="_blank" href="https://www.linkedin.com/in/zoe-erispe-38555b212/">
+              <i class="fab fa-linkedin-in fa-2x"></i></a>
+          </div>
+          <div class="ghub">
+            <a target="_blank" href="https://github.com/Zoe8888">
+              <i class="fab fa-github fa-2x ghub"></i></a>
+          </div>
+          <div class="codepen"></div>
+          <a target="_blank" href="https://codepen.io/zoe8888">
+            <i class="fab fa-codepen fa-2x"></i></a>
+      </div>
+    </footer>
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

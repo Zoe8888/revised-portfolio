@@ -2,7 +2,123 @@
   height: auto;
 }
 
+.resume-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .left {
+  margin: 1%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5%;
+  width: 40%;
+  text-align: center;
+}
+
+.right {
+  margin: 1%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5%;
+  width: 40%;
+  text-align: center;
+}
+
+.resume-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.soft {
+  margin: 1%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2%;
+  width: 35%;
+  text-align: center;
+}
+
+.tech {
+  margin: 1%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2%;
+  width: 35%;
+  text-align: center;
+}
+
+.tech-skills {
+  padding-bottom: 1%;
+}
+
+.html-icon {
+  padding-top: 1%;
+}
+
+.html {
+  padding-bottom: 1%;
+}
+
+.css-icon {
+  padding-top: 1%;
+}
+
+.css {
+  padding-bottom: 1%;
+}
+
+.java-icon {
+  padding-top: 1%;
+}
+
+.java {
+  padding-bottom: 1%;
+}
+
+.python-icon {
+  padding-top: 1%;
+}
+
+.year0 {
+  margin-top: 4%;
+}
+
+.year1 {
+  margin-top: 4%;
+}
+
+.year2 {
+  margin-top: 4%;
+}
+/*.left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,3 +358,4 @@
   position: absolute;
   top: 86%;
 }
+*/

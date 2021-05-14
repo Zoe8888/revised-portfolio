@@ -3,14 +3,15 @@
 }
 
 .general {
-  display: flex;
+  display: grid;
+    place-items: center;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-top: 36vh;
+  margin-top: 16vh;
   margin-left: 22%;
   margin-right: 11%;
   height: 120px;
@@ -19,40 +20,39 @@
 h2.name {
   left: 27%;
   position: absolute;
-  top: 54vw;
+  top: 52vw;
 }
 h2.age {
   position: absolute;
   left: 54%;
-  top: 54vw;
+  top: 52vw;
 }
 
 h2.gender {
   position: absolute;
   right: 17%;
-  top: 54vw;
+  top: 52vw;
 }
 
 h2.star {
   position: absolute;
-  top: 56vw;
+  top: 55vw;
   right: 37%;
 }
 
 h2.nationality {
   position: absolute;
-  top: 56vw;
+  top: 55vw;
   left: 25%;
 }
 
 h2.city {
   position: absolute;
   right: 14%;
-  top: 56vw;
+  top: 55vw;
 }
 
 .about-header {
-  display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(13.5px);
@@ -64,6 +64,10 @@ h2.city {
   margin-left: 22%;
   margin-right: 11%;
   text-align: center;
+  height: 500px;
+  min-width: 903px;
+  display: grid;
+    place-items: center;
 }
 .pic {
   position: absolute;
@@ -79,11 +83,12 @@ h2.city {
   padding: 5px;
   text-transform: uppercase;
   font-size: 25px;
+  margin-bottom: 1%;
 }
 
 .bio {
   font-size: 17px;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .hobbies-heading {
@@ -92,11 +97,12 @@ h2.city {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1%;
 }
 
 .hobbies {
   font-size: 17px;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .coding-heading {
@@ -105,11 +111,12 @@ h2.city {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1%;
 }
 
 .coding {
   font-size: 17px;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 #fun-facts {
@@ -128,12 +135,18 @@ h2.city {
   flex-direction: row;
 }
 
+.fun {
+  display: grid;
+    place-items: center;
+}
+
 .fun-fact {
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   font-size: 25px;
+  margin-bottom: 2%;
 }
 
 #book-icon {
@@ -142,16 +155,19 @@ h2.city {
 }
 
 #globe-icon {
+  margin-top: 2%;
   padding-right: 1%;
   padding-left: 1%;
 }
 
 #cup-icon {
+  margin-top: 2%;
   padding-right: 1%;
   padding-left: 1%;
 }
 
 #music-icon {
+  margin-top: 2%;
   padding-right: 1%;
 }
 
@@ -167,30 +183,63 @@ h2.city {
   margin-top: 2%;
   margin-right: 11%;
   margin-left: 22%;
-  height: 1000px;
   text-align: center;
+  padding: 2%;
+  min-height: 183px;
 }
 
-.testiomials {
+.testiomial {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*.testiomials {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 98vw;
-  position: absolute;
-}
+  top: 100vw;
+  position: absolute;*/
+
 
 .testiomial-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 0 1 150px;
+    margin: 5px;
 }
 
-.jason {
+.testiomial-2 {
+  flex: 0 1 150px;
+    margin: 5px;
+}
+.testiomial-3 {
+  flex: 0 1 150px;
+    margin: 5px;
+}
+.testiomial-4 {
+  flex: 0 1 150px;
+    margin: 5px;
+}
+.testiomial-5 {
+  flex: 0 1 150px;
+    margin: 5px;
+}
+.testiomial-6 {
+  flex: 0 1 150px;
+    margin: 5px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 2%;
+}
+
+/*.jason {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 110vw;
+  top: 112vw;
   left: 28%;
   font-size: 25px;
 }
@@ -200,7 +249,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 112vw;
+  top: 114vw;
   left: 25%;
 }
 
@@ -212,7 +261,7 @@ h2.city {
   height: 150px;
   width: 150px;
   position: absolute;
-  top: 101vw;
+  top: 103vw;
   left: 28%;
 }
 
@@ -221,7 +270,7 @@ h2.city {
   padding-left: 25%;
   padding-right: 59%;
   position: absolute;
-  top: 48vw;
+  top: 50vw;
   left: 1vw;
 }
 
@@ -230,7 +279,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 110vw;
+  top: 112vw;
   left: 50%;
 }
 
@@ -238,7 +287,7 @@ h2.city {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 112vw;
+  top: 114vw;
   position: absolute;
   left: 47%;
 }
@@ -250,7 +299,7 @@ h2.city {
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  top: 101vw;
+  top: 103vw;
   position: absolute;
 }
 
@@ -258,7 +307,7 @@ h2.city {
   padding-top: 72%;
   padding-left: 26%;
   position: absolute;
-  top: 42vw;
+  top: 44vw;
   padding-right: 36%;
   left: 22vw;
 }
@@ -268,7 +317,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 110vw;
+  top: 112vw;
   right: 16%;
   font-size: 25px;
 }
@@ -278,7 +327,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 112vw;
+  top: 114vw;
   right: 14%;
 }
 
@@ -290,7 +339,7 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 101vw;
+  top: 103vw;
   right: 18%;
 }
 
@@ -299,7 +348,7 @@ h2.city {
   padding-left: 70%;
   padding-right: 20%;
   position: absolute;
-  top: 42vw;
+  top: 44vw;
   right: -6vw;
 }
 
@@ -308,8 +357,8 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 110vw;
-  top: 135vw;
+  top: 113vw;
+  top: 138vw;
   right: 17%;
 }
 
@@ -318,7 +367,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 137vw;
+  top: 140vw;
   right: 14%;
 }
 
@@ -330,7 +379,7 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 126vw;
+  top: 129vw;
   right: 18%;
 }
 
@@ -339,7 +388,7 @@ h2.city {
   padding-left: 69%;
   padding-right: 20%;
   position: absolute;
-  top: 67vw;
+  top: 70vw;
   right: -5vw;
 }
 
@@ -348,7 +397,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 135vw;
+  top: 138vw;
   right: 59%;
   font-size: 25px;
 }
@@ -358,7 +407,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 137vw;
+  top: 140vw;
   right: 58%;
 }
 
@@ -370,16 +419,16 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 126vw;
+  top: 129vw;
   right: 62%;
 }
 
 .testimonial-y {
   padding-top: 72%;
-  padding-left: 23%;
+  padding-left: 25%;
   padding-right: 23%;
   position: absolute;
-  top: 67vw;
+  top: 70vw;
   right: 35vw;
 }
 
@@ -388,7 +437,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 135vw;
+  top: 138vw;
   right: 38%;
   font-size: 25px;
 }
@@ -398,7 +447,7 @@ h2.city {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 137vw;
+  top: 140vw;
   right: 35%;
 }
 
@@ -410,7 +459,7 @@ h2.city {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 126vw;
+  top: 129vw;
   right: 39%;
 }
 
@@ -419,17 +468,12 @@ h2.city {
   padding-left: 48%;
   padding-right: 41%;
   position: absolute;
-  top: 67vw;
-  right: -6%;
+  top: 70vw;
+  right: -6%;*/
 }
 
-.social-icons {
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
-}
-
-.social-icons:hover {
-  color: #a1d286;
-  background-color: white;
+@media screen and (max-width: 1496px) {
+  #about-me {
+    height: 500vh;
+  }
 }
