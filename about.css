@@ -2,10 +2,17 @@
   height: auto;
 }
 
-.general {
-  display: grid;
-    place-items: center;
+.wrapper {
+  display: flex;
   flex-direction: column;
+}
+
+.general {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
@@ -14,42 +21,12 @@
   margin-top: 16vh;
   margin-left: 22%;
   margin-right: 11%;
-  height: 120px;
+  height: auto;
 }
 
-h2.name {
-  left: 27%;
-  position: absolute;
-  top: 52vw;
-}
-h2.age {
-  position: absolute;
-  left: 54%;
-  top: 52vw;
-}
-
-h2.gender {
-  position: absolute;
-  right: 17%;
-  top: 52vw;
-}
-
-h2.star {
-  position: absolute;
-  top: 55vw;
-  right: 37%;
-}
-
-h2.nationality {
-  position: absolute;
-  top: 55vw;
-  left: 25%;
-}
-
-h2.city {
-  position: absolute;
-  right: 14%;
-  top: 55vw;
+.general h2 {
+  padding: 1%;
+  margin: 5px;
 }
 
 .about-header {
@@ -63,17 +40,29 @@ h2.city {
   margin-top: 6vh;
   margin-left: 22%;
   margin-right: 11%;
-  text-align: center;
-  height: 500px;
-  min-width: 903px;
-  display: grid;
-    place-items: center;
+  align-items: center;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .pic {
   position: absolute;
   left: -52px;
   height: 600px;
   width: 500px;
+}
+
+.about-header h2{
+    margin: 5px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-header p {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .about-heading {
@@ -82,17 +71,15 @@ h2.city {
   align-items: center;
   padding: 5px;
   text-transform: uppercase;
-  font-size: 25px;
   margin-bottom: 1%;
+
 }
 
 .bio {
-  font-size: 17px;
   margin-bottom: 2%;
 }
 
 .hobbies-heading {
-  font-size: 25px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -101,13 +88,11 @@ h2.city {
 }
 
 .hobbies {
-  font-size: 17px;
   margin-bottom: 2%;
 }
 
 .coding-heading {
   text-transform: uppercase;
-  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,11 +100,10 @@ h2.city {
 }
 
 .coding {
-  font-size: 17px;
   margin-bottom: 2%;
 }
 
-#fun-facts {
+.fun {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,18 +119,18 @@ h2.city {
   flex-direction: row;
 }
 
-.fun {
-  display: grid;
-    place-items: center;
-}
-
 .fun-fact {
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 2%;
+  font-weight: 700;
+}
+
+.fun h3 {
+  font-size: 1.2rem;
 }
 
 #book-icon {
@@ -188,288 +172,18 @@ h2.city {
   min-height: 183px;
 }
 
-.testiomial {
-  display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.testimonial h2, .testimonial h3{
+  font-weight: 700;
 }
 
-/*.testiomials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 100vw;
-  position: absolute;*/
-
-
-.testiomial-1 {
-  flex: 0 1 150px;
-    margin: 5px;
-}
-
-.testiomial-2 {
-  flex: 0 1 150px;
-    margin: 5px;
-}
-.testiomial-3 {
-  flex: 0 1 150px;
-    margin: 5px;
-}
-.testiomial-4 {
-  flex: 0 1 150px;
-    margin: 5px;
-}
-.testiomial-5 {
-  flex: 0 1 150px;
-    margin: 5px;
-}
-.testiomial-6 {
-  flex: 0 1 150px;
-    margin: 5px;
+.testimonial p {
+  font-size: 20px;
 }
 
 .testimonial img {
   border-radius: 50%;
   width: 80px;
   margin-top: 2%;
-}
-
-/*.jason {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 112vw;
-  left: 28%;
-  font-size: 25px;
-}
-
-.position-j {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 114vw;
-  left: 25%;
-}
-
-.img-j {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  top: 103vw;
-  left: 28%;
-}
-
-.testimonial-j {
-  padding-top: 66%;
-  padding-left: 25%;
-  padding-right: 59%;
-  position: absolute;
-  top: 50vw;
-  left: 1vw;
-}
-
-.godwin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 112vw;
-  left: 50%;
-}
-
-.position-g {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 114vw;
-  position: absolute;
-  left: 47%;
-}
-
-.img-g {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  top: 103vw;
-  position: absolute;
-}
-
-.testimonial-g {
-  padding-top: 72%;
-  padding-left: 26%;
-  position: absolute;
-  top: 44vw;
-  padding-right: 36%;
-  left: 22vw;
-}
-
-.ron {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 112vw;
-  right: 16%;
-  font-size: 25px;
-}
-
-.position-r {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 114vw;
-  right: 14%;
-}
-
-.img-r {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 103vw;
-  right: 18%;
-}
-
-.testimonial-r {
-  padding-top: 72%;
-  padding-left: 70%;
-  padding-right: 20%;
-  position: absolute;
-  top: 44vw;
-  right: -6vw;
-}
-
-.adam {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 113vw;
-  top: 138vw;
-  right: 17%;
-}
-
-.position-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 140vw;
-  right: 14%;
-}
-
-.img-a {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 129vw;
-  right: 18%;
-}
-
-.testimonial-a {
-  padding-top: 72%;
-  padding-left: 69%;
-  padding-right: 20%;
-  position: absolute;
-  top: 70vw;
-  right: -5vw;
-}
-
-.yam {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 138vw;
-  right: 59%;
-  font-size: 25px;
-}
-
-.position-y {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 140vw;
-  right: 58%;
-}
-
-.img-y {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 129vw;
-  right: 62%;
-}
-
-.testimonial-y {
-  padding-top: 72%;
-  padding-left: 25%;
-  padding-right: 23%;
-  position: absolute;
-  top: 70vw;
-  right: 35vw;
-}
-
-.brent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 138vw;
-  right: 38%;
-  font-size: 25px;
-}
-
-.position-b {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 140vw;
-  right: 35%;
-}
-
-.img-b {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 129vw;
-  right: 39%;
-}
-
-.testimonial-b {
-  padding-top: 72%;
-  padding-left: 48%;
-  padding-right: 41%;
-  position: absolute;
-  top: 70vw;
-  right: -6%;*/
 }
 
 @media screen and (max-width: 1496px) {
