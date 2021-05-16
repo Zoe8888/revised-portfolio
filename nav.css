@@ -45,9 +45,11 @@
   z-index: 1000;
   font-size: 30px;
   background: none;
-  border: grey;
   outline: none;
   padding: 20px;
+  font-weight: 700;
+  color: #a1d286;
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .landing {
