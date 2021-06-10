@@ -26,6 +26,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  text-align: center;
 }
 
 #landing {
@@ -36,5 +37,14 @@ body {
 }
 
 .landing-img {
-  height: 90%;
+  height: 100%;
+  width: 60vw;
+  min-width: 350px;
+}
+
+@media screen and (max-width: 400px) {
+  .landing-description {
+    font-size: 1.3rem;
+    margin-bottom: 4%;
+  }
 }
