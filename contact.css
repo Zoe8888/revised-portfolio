@@ -3,35 +3,53 @@
 }
 
 .contact-container {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 7%;
 }
 
 .contact-top {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 3%;
+}
+
+.call {
+  display: flex;
+}
+
+.phone {
+  margin-right: 10px;
+}
+
+.at {
+  margin-right: 1%;
 }
 
 .num {
-    padding-bottom: 10%;
+  margin-bottom: 10%;
 }
 
-.num a, .mail a {
+.mail {
+  margin-bottom: 20%;
+  width: 30vw;
+}
+.num a,
+.mail a {
   color: rgb(90, 90, 90);
 }
 
-.num a:hover, .mail a:hover {
+.num a:hover,
+.mail a:hover {
   text-decoration: none;
   color: white;
 }
 
-
 .contact-form {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 5% 10%;
   background: rgba(255, 255, 255, 0.65);
@@ -41,13 +59,13 @@
   border: 1px solid rgba(255, 255, 255, 0.65);
   flex-direction: column;
   text-align: center;
-  width: 60%;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  width: 40vw;
+  margin-bottom: 3%;
+  margin-left: 5%;
 }
 
 .contact-form ::placeholder {
-  color: rgb(90, 90, 90);
+  color: black;
   font-size: 15px;
 }
 
@@ -58,8 +76,8 @@
   color: rgb(90, 90, 90);
   text-transform: uppercase;
   font-size: 40px;
-  padding-bottom: 2%;
-    font-weight: 700;
+  padding-bottom: 15%;
+  font-weight: 700;
 }
 
 label {
@@ -78,58 +96,64 @@ label {
   text-align: center;
 }
 
-.contact-button {
-  transition-duration: 0.4s;
+.contact-input::placeholder {
+  color: rgb(90, 90, 90);
 }
 
-.contact-button:hover {
-  background-color: grey;
+.submit-button {
+  transition-duration: 0.4s;
+  color: rgb(90, 90, 90);
+}
+
+.submit-button:hover {
+  background-color: #a1d286;
   color: white;
   border: none;
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
-  padding: 70px 0;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.65);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer-inner {
+  align-items: center;
+  padding: 0 3%;
   margin: 0 auto;
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  height: 5vw;
+  min-width: 474px;
 }
 
 .footer-name {
-  font-size: 33px;
-  color: #a1d286;
+  font-size: 1.5rem;
+  color: rgb(90, 90, 90);
   width: 100%;
   font-weight: bold;
-  padding-left: 3%;
-  place-items: center;
 }
 
-.footer-inner .footer-icons a {
+.footer-icons a {
   font-size: 18px;
-  color: #a1d286;
   display: block;
   font-weight: 200;
-  width: 100%;
-  padding-bottom: 5px;
   margin: 5px;
   flex-direction: row;
+  color: rgb(90, 90, 90);
 }
 
 .footer-icons {
   display: flex;
   flex-direction: row;
-  font-size: 10px;
-  float: right;
+  color: rgb(90, 90, 90);
+  margin-right: -2%;
+  margin-bottom: 2%;
+  top: 30%;
+  z-index: 1000;
+  position: relative;
+}
+
+.footer-icons a:hover {
+  color: #a1d286;
 }
 
 .link {
@@ -140,15 +164,87 @@ label {
   margin-right: 2%;
 }
 
+@media screen and (max-width: 990px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .num,
+  .mail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-header {
+    padding-bottom: 4%;
+  }
+
+  .num,
+  .mail {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .num a:hover,
+  .mail a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-form {
+    width: 340px;
+    margin: 10% 0;
+  }
+
+  .submit-button {
+    background: #a1d286;
+    color: rgb(90, 90, 90);
+  }
+}
 
 @media screen (max-width: 600px) {
-  .footer .footer-inner {
+  .footer {
     width: 90%;
   }
-  .footer-inner .logo-container,
-  .footer-inner .footer-icons,
-  .footer-inner .based {
+  .footer-name {
     width: 100%;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+  }
+
+  .footer-name {
+    font-size: 1rem;
+  }
+
+  .footer-icons {
+    top: 10%;
+    margin-right: 16%;
   }
 }
